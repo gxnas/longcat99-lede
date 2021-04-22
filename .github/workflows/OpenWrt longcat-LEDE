@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: OpenWrt longcat-LEDE
+name: OpenWrt-LEDE5.4Docker
 
 on:
   workflow_dispatch:
