@@ -68,6 +68,7 @@ jobs:
     - name: 加载自定义插件主题
       run: |
        cd package
+       rm -Rf lean/luci-theme-argon
        mkdir openwrt-packages
        cd openwrt-packages
        git clone https://github.com/longcat99/long.git
