@@ -673,6 +673,9 @@ jobs:
         # 修改frp排序95
         find package/*/ feeds/*/ -maxdepth 5 -path "*luci-app-frpc/luasrc/controller/frp.lua" | xargs -i sed -i 's/\"Frp Setting\")\, 100/\"Frp Setting\")\, 95/g' {}
         
+        # 修改frps排序95
+        find package/*/ feeds/*/ -maxdepth 5 -path "*lean/luci-app-frps/luasrc/controller/frps.lua" | xargs -i sed -i 's/\"Frps\"))/\"Frps\")\, 95)/g' {}
+        
         # 修改nps排序94
         find package/*/ feeds/*/ -maxdepth 5 -path "*luci-app-nps/luasrc/controller/nps.lua" | xargs -i sed -i 's/\"Nps Setting\")\, 100/\"Frp Setting\")\, 94/g' {}
         
