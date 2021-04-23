@@ -681,6 +681,9 @@ jobs:
         # 修改nps排序94
         find package/*/ feeds/*/ -maxdepth 5 -path "*luci-app-nps/luasrc/controller/nps.lua" | xargs -i sed -i 's/\"Nps Setting\")\, 100/\"Nps Setting\")\, 94/g' {}
         
+        # 修改pppoe-server排序5
+        find package/*/ feeds/*/ -maxdepth 5 -path "*luci-app-pppoe-server/luasrc/controller/pppoe-server.lua" | xargs -i sed -i 's/\"PPPoE Server\")\, 3/\"PPPoE Server\")\, 5/g' {}
+        
       
         
 
