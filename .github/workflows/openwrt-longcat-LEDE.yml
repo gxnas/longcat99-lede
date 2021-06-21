@@ -78,7 +78,7 @@ jobs:
        # git clone https://github.com/longcat99/OpenClash.git
        git clone https://github.com/vernesong/OpenClash.git
        # git clone https://github.com/frainzy1477/luci-app-clash.git
-       git clone https://github.com/destan19/OpenAppFilter.git
+       git clone --depth 1 -b oaf-3.0.1 https://github.com/destan19/OpenAppFilter.git
        git clone https://github.com/jerrykuku/luci-app-ttnode.git
        git clone https://github.com/linkease/ddnsto-openwrt.git
        git clone https://github.com/jerrykuku/luci-app-vssr.git
@@ -454,7 +454,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-ntpc=y
           CONFIG_PACKAGE_luci-app-netspeedtest=y
           CONFIG_PACKAGE_speedtest=y
-          # CONFIG_PACKAGE_luci-app-oaf=y
+          CONFIG_PACKAGE_luci-app-oaf=y
           CONFIG_PACKAGE_luci-app-ocserv=y
           CONFIG_PACKAGE_luci-app-omcproxy=y
           CONFIG_PACKAGE_luci-app-openclash=y
